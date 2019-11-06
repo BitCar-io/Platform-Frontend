@@ -1,0 +1,175 @@
+#buyTokens {
+    margin-bottom: 0.8em;
+    margin-top: 0.8em;
+    width: 50%;
+    height: 3em;
+}
+
+.price-bubble {
+    background: $price-bubble;
+    color: $background;
+    border-radius: 5px;
+    text-align: left;
+    padding: 10px;
+    line-height: 1.2;
+
+    .usd-display {
+        font-size: 12px;
+        padding-bottom: 1.2em;
+    }
+
+    .current-balance {
+        font-size: 0.8em;
+    }
+
+    .balance-alert {
+        background-color: $warning;
+        border-radius: 5px;
+        padding-top: 0.1em;
+        padding-bottom: 0.1em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+}
+
+.delivery-details{
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.buy-payment-split {
+    margin-bottom: 0.8em;
+}
+
+.payment-breakdown-link {
+    margin-top: 0.8em;
+}
+
+.currency-font-icon {
+    font-size: 24px;
+    margin-right: 5px;
+    position: relative;
+    bottom: 2px;
+}
+
+.header-total {
+    position:  relative;
+    margin-bottom: 0;
+}
+
+.header-vertical-align {
+    position: absolute;
+    top: 47%;
+    transform: translate(0, -50%);
+    padding-left: 10px;
+}
+
+.buy-estimate {
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.rank-limit-wrapper {
+    margin-top: 5px;
+
+    ul {
+        margin-bottom: 0.5em !important;
+    }
+}
+
+.rank-limit-title, .rank-limit-allowance {
+    font-weight: bold;
+}
+
+.rank-limit-info li {
+    list-style-type: none;
+}
+
+.rank-limit-qty {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.buy-agree-terms {
+    width: 100%;
+}
+
+.buy-warning {
+    color: $warning;
+    font-size: 1.4em;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.payment-options-back {
+    color: $brand-main;
+    text-decoration: underline;
+}
+
+.wallet-highlight {
+    color: white;
+    word-break: "break-all"
+}
+
+.payment-types {
+
+    margin-top: 0.5em;
+
+    .payment-option {
+        margin-top: 0.5em;
+        margin-bottom: 0.25em;
+        height: 4em;
+        padding: 0;
+        border-radius: 4px;
+        color: $background;
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+        .payment-container {
+            margin: auto;
+            font-size: 1.5em;
+            font-family: $headline-font;
+            letter-spacing: 0.05em;
+        }
+
+        span {
+            display: contents;
+        }
+
+        .eth-icon {
+            top: 0.18em;
+            font-size: 1.7em;
+            position: relative;
+        }
+    }
+
+    .paypal-placeholder {
+        display: flex;
+        align-items: center;
+        .placeholder-text {
+            margin-right: 0.25em;
+        }
+        i {
+            margin: 0.05em;
+            font-size: 1.8em;
+        }
+    }
+
+    .disabled {
+        img {
+            opacity: 0.3;
+        }
+    }
+
+    @media (max-width: 340px) {
+        .paypal-placeholder {
+            i {
+                margin: 0.05em;
+                font-size: 1.5em;
+            }
+        }
+    }
+}

@@ -1,0 +1,105 @@
+image: node:10
+
+cache:
+  key: "$CI_BUILD_REF_NAME"
+  paths:
+    - node_modules/
+
+stages:
+  - setup
+  - test
+  - build
+  - deploy
+  - version
+
+Setup:
+  stage: setup
+  tags:
+    - cicd1
+  script:
+    - yarn install
+    - yarn list --depth=0
+  only:
+    - mainnet
+    - rinkeby
+    - ropsten
+    - staging
+    - development
+
+Test:
+  stage: test
+  tags:
+    - cicd1
+  script:
+    - yarn run test
+  dependencies:
+    - Setup
+  only:
+    - mainnet
+    - rinkeby
+    - ropsten
+    - staging
+    - development
+
+Build:
+  stage: build
+  tags:
+    - cicd1
+  script:
+    - yarn run get-contracts-bucket
+    - yarn run build-for-branch
+  dependencies:
+    - Test
+  artifacts:
+    paths:
+      - dist
+  only:
+    - mainnet
+    - rinkeby
+    - ropsten
+    - staging
+    - development
+
+Deploy:
+  stage: deploy
+  tags:
+    - cicd1
+  script:
+    - yarn run deploy-to-ipfs "${CI_COMMIT_REF_NAME}"
+    # - echo -e "\e[32mRegistering Ticker Contract with Ticker Server\e[39m"
+    # - node ./scripts/addAddressToTicker.js "${CI_JOB_ID}" ./deployedipfs.json "${CI_COMMIT_REF_NAME}"
+  # environment:
+  #   name: "${CI_COMMIT_REF_NAME}-frontend"
+  #   url: "https://${CI_COMMIT_REF_NAME}-platform.bitcar.io"
+  dependencies:
+    - Build
+  only:
+    - mainnet
+    - rinkeby
+    - ropsten
+    - staging
+    - development
+
+Version:
+  image: python:3.7-stretch
+  stage: version
+  tags:
+    - cicd1
+  script:
+    - mkdir -p ~/.ssh && chmod 700 ~/.ssh
+    - ssh-keyscan 192.168.1.100 >> ~/.ssh/known_hosts && chmod 644 ~/.ssh/known_hosts
+    - eval $(ssh-agent -s)
+    - ssh-add <(echo "$SSH_PRIVATE_KEY")
+    - pip install semver
+    - python ./scripts/deployment/gen-semver.py > version
+  artifacts:
+    paths:
+      - version
+  only:
+    - mainnet
+    - rinkeby
+    - ropsten
+    - staging
+    - development
+  dependencies:
+    - Deploy

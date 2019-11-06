@@ -1,0 +1,49 @@
+.sub-header {
+    // height: 30px;
+    background: $brand-main;
+    color: $background !important;
+}
+.sub-header-alert {
+    padding: 5px;
+    color: $background !important;
+    border-bottom: solid 1px $background !important;
+}
+.sub-header-alert a {
+    color: $background !important;
+    text-decoration: underline;
+}
+.ticker-wrapper {
+    float: left;
+    margin-right: 20px;
+    p {
+        color: #888;
+        font-size: 13px;
+    }
+}
+.network-alert {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+.platform-alert {
+    .ant-collapse, .ant-collapse-borderless,
+    .ant-collapse-item, .ant-collapse-header,
+    .ant-collapse-content, .ant-collapse-content-box {
+        background-color: $brand-main;
+        color: $background !important;
+        border: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .ant-collapse-content-box {
+        padding-top: 5px !important;
+    }
+
+    .ant-collapse-header {
+        font-weight: bold !important;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+}

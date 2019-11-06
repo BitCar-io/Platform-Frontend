@@ -1,0 +1,24 @@
+.my-ask {
+    font-weight: bold;
+}
+.my-ask:after {
+    content:"\A";
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background: $danger;
+    display: inline-block;
+    margin-left: 5px;
+}
+.my-bid {
+    font-weight: bold;
+}
+.my-bid:after {
+    content:"\A";
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background: $success;
+    display: inline-block;
+    margin-left: 5px;
+}

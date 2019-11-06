@@ -1,0 +1,55 @@
+.ant-alert {
+  font-family: $primary-font;
+}
+
+// .ant-alert-message {
+//   color: $background;
+// }
+
+.ant-alert-success {
+  border: 1px solid $success !important;
+  background-color: $success !important;
+  color: $background;
+  .ant-alert-icon {
+    color: $background;
+  }
+}
+.ant-alert-info {
+  border: 1px solid $info !important;
+  background-color: $info !important;
+  color: $background;
+  .ant-alert-icon {
+    color: $background;
+  }
+}
+.ant-alert-warning {
+  border: 1px solid $warning !important;
+  background-color: $warning !important;
+  color: $background;
+  .ant-alert-icon {
+    color: $background;
+  }
+}
+.ant-alert-error {
+  border: 1px solid $danger !important;
+  background-color: $danger !important;
+  color: $background;
+  .ant-alert-icon {
+    color: $background;
+  }
+}
+
+.ant-notification-notice {
+  .ant-notification-notice-icon, .ant-notification-notice-message, .ant-notification-notice-description, .ant-notification-notice-close {
+    color: $background;
+  }
+  &.notification-success {
+    background-color: $success !important;
+  }
+  &.notification-info {
+    background-color: $info !important;
+  }
+  &.notification-error {
+    background-color: $danger !important;
+  }
+}

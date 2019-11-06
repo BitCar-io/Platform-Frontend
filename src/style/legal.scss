@@ -1,0 +1,145 @@
+.legal-wrapper {
+}
+
+.legal-options {
+    position: fixed;
+    z-index: 100;
+    left: 2em;
+
+    .option-link {
+        margin-bottom: 1em;
+    }
+}
+
+.last-updated {
+    margin-bottom: 1em !important;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.terms-initial-warning {
+    @extend .uppercase;
+    text-align: center;
+}
+    
+.terms-highlight {
+    font-weight: bold;
+    color: $brighter-colour;
+}
+
+.terms-warning {
+    @extend .terms-highlight;
+    text-decoration: underline;
+}
+
+.terms-number {
+    padding-right: 0.5em;
+}
+
+.terms-sub-number {
+    padding-right: 0.5em;
+}
+
+.term-definition-container{
+    padding-left: 1.5em;
+
+    p {
+        padding-top: 10px !important;
+        margin-bottom: 0em !important;
+    }
+}
+
+.terms-space-lines {
+    line-height: 1em;
+}
+
+.terms-text {
+    font-size: 1.2em;
+    padding: 10px;
+    padding-bottom: 50px;
+
+    // overflow: visible !important;
+
+    a {
+        text-decoration: underline;
+    }
+
+    h2, h3, h4 {
+        @extend .terms-highlight;
+        margin-top: 1em;
+        margin-bottom: 0;
+    }
+
+    p {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    td {
+        vertical-align: top;
+        padding-top: 0.5em;
+    }
+
+    h3 {
+        margin-top: 1em;
+    }
+}
+
+.terms-bottom-text {
+    margin-top: 0.5em;
+}
+
+.terms-sub-sub {
+    padding-top: 0em !important;
+}
+
+.terms-sub-sub-number {
+    padding-left: 0.5em !important;
+}
+
+.terms-uppercase {
+    text-transform: uppercase;
+}
+
+.terms-conditions-box {
+    height: 550px;
+    overflow-y: scroll;
+    background: #fff;
+    margin-bottom: 15px;
+}
+
+.terms-conditions-box .terms-text {
+    a, h2, h3, p, td, .terms-highlight  {
+        color: $background !important;
+    }
+}
+
+.aml-text, .privacy-text, .returns-text {
+    @extend .terms-text;
+
+    p {
+        margin-bottom: 0.5em;
+    }
+}
+
+@media print {
+    
+    .legal-wrapper {
+        
+        overflow: visible !important;
+
+        .ant-col-2 {
+            width: 0% !important;
+        }
+
+        .ant-col-20 {
+            width: 100% !important;
+        }
+
+        a, h2, h3, p, td, li, .terms-highlight  {
+            color: $print-colour !important;
+        }
+    }
+}

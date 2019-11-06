@@ -1,0 +1,54 @@
+.wallet-manager .control-footer button {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.wallet-manager .ant-collapse {
+    margin-top: 10px;
+}
+
+.wallet-manager .ant-collapse-content-box {
+    background-color: $background;
+    color: $primary-colour;
+}
+
+.wallet-manager .add-address button {
+    margin-top: 3px;
+}
+
+.wallet-manager .add-address .ant-form-item-control-wrapper {
+    margin-right: 10px !important;
+}
+
+.wallet-manager .ant-table-row {
+    background-color: $primary-colour;
+}
+
+.wallet-manager .unlocked-wallet {
+    margin-top: 7px;
+    float: right;
+}
+
+.wallet-manager table a {
+    color: $background;
+    text-decoration: underline;
+}
+
+.wallet-manager .ant-popover-buttons button {
+    background-color: $brand-main !important;
+    color: $background !important;
+}
+
+.wallet-manager .ant-popover-buttons .ant-btn-primary {
+    background-color: $background !important;
+    color: $primary-colour !important;
+}
+
+.wallet-text-input .ant-input-group-addon {
+    color: rgba(0,0,0,0.45);
+    cursor: pointer;
+
+    &:hover {
+        color: rgba(0,0,0,0.8);
+    }
+}

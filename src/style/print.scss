@@ -1,0 +1,123 @@
+@media screen {
+    .no-screen {
+        display: none;
+    }
+}
+
+.print-header {
+    // position: fixed;
+    // top: 5em;
+    // left: 5em;
+    
+    .print-logo {
+      margin-bottom: 2em;
+      margin-top: 2em;
+      width: 18em;
+  }
+}
+
+div.footer {
+
+    // @media screen {
+    //     display: none;
+    // }
+
+    position: running(footer);
+}
+
+.save-canvas {
+
+    .no-print, .no-screen.no-save, .header-settings-wrapper, .sub-header, .buy-modal-footer,
+    .ant-layout-header, .ant-layout-footer, .ant-notification,
+    .ant-modal-close, .header-titles, .ril-outer, .ant-modal-mask {
+        display: none !important;
+    }
+
+    .content {
+        background-color: white !important;
+    }
+
+    .allow-layout-print {
+        display: block !important;
+    }
+
+    .main-content-column {
+        margin: 0 !important;
+        width: 100% !important;
+        overflow: visible !important;
+    }
+
+    .ant-modal {
+        width: 100% !important;
+    }
+
+    .no-screen {
+        display: block !important;
+        color: $print-colour !important;
+    }
+
+    h1, h2, h3, h4 {
+        color: $print-colour !important;
+    }
+
+    a {
+        text-decoration: none !important;
+        color: $print-colour !important;
+    }
+
+    .underline {
+        text-decoration: none !important;
+    }
+}
+
+@media print {
+
+    @page {
+        size: A4;
+        margin: 1cm;
+        @bottom-center {
+            content: element(footer);
+        }
+        @bottom-right {
+            content: counter(page) " of " counter(pages);
+          }
+    }
+
+    .no-print, .header-settings-wrapper, .sub-header, .buy-modal-footer,
+    .ant-layout-header, .ant-layout-footer, .ant-notification,
+    .ant-modal-close, .header-titles, .ril-outer, .ant-modal-mask {
+        display: none !important;
+    }
+
+    .allow-layout-print {
+        display: block !important;
+    }
+
+    .main-content-column {
+        margin: 0 !important;
+        width: 100% !important;
+        overflow: visible !important;
+    }
+
+    .ant-modal {
+        width: 100% !important;
+    }
+
+    .no-screen {
+        display: block !important;
+        color: $print-colour !important;
+    }
+
+    h1, h2, h3, h4 {
+        color: $print-colour !important;
+    }
+
+    a {
+        text-decoration: none !important;
+        color: $print-colour !important;
+    }
+
+    .underline {
+        text-decoration: none !important;
+    }
+}

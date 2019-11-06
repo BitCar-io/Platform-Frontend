@@ -1,0 +1,217 @@
+.asset-token-detail {
+    margin-bottom: 10px;
+    text-align: left;
+
+    @media (max-width: 992px) {
+        text-align: center;
+    }
+
+    @media (min-width: 1600px) {
+        margin-top: 20px;
+        float: right;
+    }
+}
+.supporting-doc-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+.supporting-doc {
+    margin-right: 8px;
+}
+.spec-title {
+    font-family: $headline-font;
+    font-size: 36px;
+    color: white;
+    
+    @media (max-width: 992px) {
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+.spec-title-make {
+    color: $brand-main;
+}
+.spec-price-card {
+    text-align: center;
+    min-height: 220px;
+}
+.spec-price {
+    font-size: 36px;
+    font-family: $headline-font;
+    margin-bottom: 0px;
+    margin-top: 25px;
+}
+.spec-price-currency {
+    color: $brand-main;
+}
+.spec-price-appreciation {
+    font-size: 22px;
+    font-family: $headline-font;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.spec-price-appreciation i {
+    margin-left: 5px;
+}
+
+.car-image-card {
+    background: $card-dark;
+    height: 280px;
+    border: none;
+}
+.token-count {
+    font-family: $headline-font;
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: -5px;
+    margin-top: 35px;
+}
+.token-count-total {
+    color: $primary-colour;
+}
+.token-count-remaining {
+    float: right;
+}
+.term {
+    font-family: $headline-font;
+    font-size: 18px;
+    margin-top: 32px;
+    margin-bottom: 0px;
+}
+.all-tokens-sold {
+    font-family: $headline-font;
+    font-size: 22px;
+    color: $brand-main !important;
+}
+.buy-modal-footer {
+    color: $brighter-colour;
+    text-align: left;
+}
+.car-info {
+    list-style: none;
+    padding: 0;
+    color: #fff;
+}
+.car-info li {
+    padding: 2px;
+}
+.car-info-data {
+    float: right;
+    color: $primary-colour;
+}
+.spec-thumbnail {
+    width: 100%;
+    margin-bottom: 10px;
+    cursor: pointer;
+    height: 140px;
+    object-fit: cover;
+    background-position-x: center;
+}
+.spec-overview {
+    white-space: pre-wrap;
+}
+.spec-overview-card {
+    max-height: 244px;
+    overflow-y: scroll; 
+    padding-bottom: 100px !important;
+}
+.card-fade-out {
+    .ant-card {
+        margin-bottom: 0;
+    }
+}
+.card-fade-out:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    width: calc(100% - 15px);
+    height: 30%;
+    z-index: 0;
+    background: linear-gradient(to bottom, rgba(58, 60, 69, 0), rgba(58, 60, 69, 1));
+}
+.buy-tokens-btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.car-buy-card {
+    padding: 0px !important;
+}
+.token-badge {
+    background: $info;
+    margin-top: 23px;
+    margin-left: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    color: $background;
+    border-radius: 2px;
+}
+
+@media (max-width: 576px) {
+    .header-icon {
+        font-size: 40px !important;
+        width: 50px !important;
+    }
+    .spec-title {
+        font-size: 36px;
+    }
+    .token-count-remaining {
+        float: none;
+        display: block;
+        margin-top:10px;
+        font-size: 1.2rem;
+    }
+    .buy-tokens-btn {
+        width: 100% !important;
+    }
+}
+@media (max-width: 768px) {
+    .card-fade-out:after {
+        bottom: 0;
+    }
+    .spec-overview-card {
+        max-height: unset;
+    }
+    .car-info-card {
+        max-height: unset;
+    }
+    .card-fade-out:after {
+        display: none;
+    }
+}
+@media (max-width: 992px) {
+    .transaction-history {
+        display: none;
+    }
+}
+
+.slick-dots {
+    position: initial !important;
+    
+    li button:before {
+        color: #ccc !important;
+
+        .slick-active {
+            color: white !important;
+        }
+    }
+}
+
+.slick-slide {
+    padding: 0 7.5px;
+}
+
+.slick-slider {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.supporting-document {
+    font-size: 1.1em;
+}

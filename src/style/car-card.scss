@@ -1,0 +1,121 @@
+.car-card {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: center, 
+}
+.car-card:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.8;
+    background-color: #2f323b;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.currency {
+    color: $warning;
+}
+.closed.car-card:before {
+    opacity: 0.9;
+}
+.car-title {
+    color: $warning;
+    margin-top: 25px;
+    margin-bottom: 0;
+    font-family: $headline-font;
+    font-size: 2.5rem;
+    text-align: center;
+    line-height: 1.1;
+}
+
+.car-price {
+    font-family: $headline-font;
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: -10px;
+    margin-top: 10px;
+    text-align: center;
+}
+.car-year {
+    color: $brighter-colour;
+}
+.car-card-info-list li {
+    color: #555;
+    list-style: none;
+    font-size: 18px;
+}
+.car-card-action-call {
+    background: $warning !important;
+    width: 300px !important;
+    color: #444 !important;
+    font-size: 20px !important;
+    font-family: BebasNeue-Bold !important;
+    padding: 3px !important;
+}
+.car-token-code {
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+}
+.progress-title {
+    font-family: $headline-font;
+    color: #fff;
+    font-size: 1.9rem;
+    text-align: center;
+}
+.availability-banner {
+    color: $background;
+    bottom: 25px;
+    left: 0;
+    right: 10px;
+    padding-top: 2px;
+    text-align: center;
+    font-family: $headline-font;
+    font-size: 1.5rem;
+    font-weight: bold;
+    .anticon {margin-right:3px}
+}
+@media (max-width: 768px) {
+    .car-make {
+        text-align: center;
+    }
+}
+@media (max-width: 1600px) {
+    // .car-title {
+    //     font-size: 3rem;
+    // }
+    // .car-price {
+    //     font-size: 3rem;
+    // }
+    .progress-title {
+        font-size: 1.5rem;
+    }
+}
+@media (min-width: 1600px) {
+    .car-make {
+        display: block;
+    }
+    .car-token-code {
+        text-align: right;
+    }
+    .progress-title {
+        text-align: right;
+    }
+    .car-title {
+        text-align: left;
+    }
+    .car-price {
+        text-align: right;
+    }
+}

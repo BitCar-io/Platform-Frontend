@@ -1,0 +1,30 @@
+.asset-search-result-card {
+  min-width: 300px;
+}
+.asset-search-result-title {
+    position: absolute;
+    top: 15px;
+    // font-weight: bold;
+}
+.asset-search-close {
+    position: absolute;
+    top: 18px;
+    right: 10px;
+    cursor: pointer;
+    color: $primary-colour;
+}
+.asset-search-result {
+    cursor: pointer;
+    color: $primary-colour !important;
+}
+.asset-search-result-overlay .ant-popover-inner-content {
+    background: $background;
+    border-color: $brand-main;
+    border-style: ridge;
+    border-width: 2px;
+}
+
+.asset-search-result-overlay .ant-popover-title {
+    background: $background;
+    color: $primary-colour;
+}

@@ -1,0 +1,25 @@
+.ant-layout-footer {
+    // min-width: 768px;
+    text-align: center;
+    flex-shrink: 0;
+    background: $footer-background;
+    color: $brighter-colour;
+    padding: 10px;
+}
+.footer-link {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.footer-partner-link {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.footer-section {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 1200px) {
+    .footer-partners-section {
+        display: none;
+    }
+}

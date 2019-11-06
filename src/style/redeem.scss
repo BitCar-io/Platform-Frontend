@@ -1,0 +1,44 @@
+.steps-content {
+    .steps-action {
+        margin-top: 20px;
+    }
+
+    input:disabled {
+        color: white !important;
+        background-color: transparent !important;
+        border: none !important;
+        cursor: inherit !important;
+        font-size: 1em;
+    }
+
+    .ant-select-disabled .ant-select-selection {
+        color: white !important;
+        background-color: transparent !important;
+        border: none !important;
+        cursor: inherit !important;
+    }
+
+    .ant-checkbox-wrapper {
+        margin-top: 15px;
+    }
+
+    .membership-error {
+        margin-top: 2em;
+    }
+}
+
+.already-redeemed {
+    margin-bottom: 2em;
+
+    .email-bitcar {
+        color: rgba(0, 0, 0, 0.85) !important;
+        text-decoration: underline;
+    }
+}
+
+.redemption-alert {
+    a {
+        color: rgba(0, 0, 0, 0.85) !important;
+        text-decoration: underline;
+    }
+}

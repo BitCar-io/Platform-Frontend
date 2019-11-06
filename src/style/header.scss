@@ -1,0 +1,128 @@
+.heading-account-warning {
+    margin-bottom: 10px;
+}
+.ant-layout-header {
+    // min-width: 768px;
+    background: #fff;
+    height: unset;
+    padding: 0px;
+    line-height: 0px;
+}
+.wallet-wrapper {
+    position: relative;
+    margin-right: 10px;
+    float: left;
+}
+.header-wallet {
+    float: left;
+}
+.wallet-providers {
+    color: $brighter-colour;
+}
+
+.wallet-unlocked {
+    // font-size: 1.1em;
+
+}
+
+.wallet-locked {
+    opacity: 0.5;
+}
+
+.wallet-locked-icon {
+    margin-left: 1px;
+}
+
+@media (min-width: 576px) {
+    .header-wallet {
+        float: right;
+        margin-top: 15px;
+    }
+}
+@media (min-width: 576px) {
+    .header-wallet {
+        width: 100%;
+    }
+}
+.header-icon {
+    font-size: 30px;
+    color: #f6a821;
+    width: 45px;
+    float: left;
+}
+.header-titles {
+    h1 {
+        margin-bottom: 0;
+    }
+}
+.header-current-wallet:hover {
+    background-color: #444 !important;
+}
+
+.header-wallet-registered {
+    border-color: #56c0e0 !important;
+}
+
+.header-wallet-registered:hover {
+    border-color: #56c0e0 !important;
+    background-color: #444 !important;
+}
+
+.header-current-wallet-tooltip .ant-tooltip-inner {
+    background-color: #444 !important;
+    width: 325px !important;
+}
+.header-bitcar-address-tooltip .ant-tooltip-inner {
+    background-color: #444 !important;
+    width: 320px !important;
+    font-size: 13px;
+}
+.header-portfolio-selector {
+    width: 250px;
+    margin-right: 10px;
+    display: inline-block;
+}
+.header-right {
+    color: $background;
+    button > span {
+        color: $background;
+    }
+}
+.header-alert {
+    display: inline-block;
+}
+.header-settings-icon {
+    font-size: 24px;
+    display: inline-block;
+    position: relative;
+    top: 6px;
+    left: 8px;
+    margin-left: 10px;
+    a { color: $background }
+}
+.login-wrapper {
+    display: inline-block;
+}
+.header-settings-wrapper {
+    text-align: right;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+@media (min-width: 992px) {
+    .wallet-wrapper {
+        top: 7px;
+        float: none;
+        display: inline-block;
+    }
+    .login-wrapper {
+        text-align: right;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .header-settings-wrapper {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        text-align: right;
+    }
+}

@@ -1,0 +1,100 @@
+/* Colour variables */
+$primary-colour: #b8c1ca;
+$brighter-colour: #ddd;
+$disabled-colour: rgb(119, 119, 119);
+$brand-main: #f6a821;
+$brand-main-lighter: #facb7b;
+$background: #2f323b;
+$input-background: #63656f;
+$danger: #db524b;
+$warning: #f6a821;
+$success: #1bbf89;
+$info: #56c0e0;
+$card-dark: #3A3C44;
+$card-light: #ddd;
+$footer-background: #2a2d33;
+$incomplete: #63656f;
+$complete: #868997;
+$price-bubble: #d6e3f1;
+$bronze: #ce9a6e;
+$silver: #cfedf9;
+$gold: #fddf8a;
+$row-alternate-colour: #404040;
+$print-colour: black;
+
+:export {
+    coldwallet: $info;
+    hotwallet: $danger;
+}
+
+.cold-wallet {
+    color: $info;
+}
+
+.hot-wallet {
+    color: $danger;
+}
+
+/* fonts */
+$primary-font: SourceSansPro-Regular, sans-serif;
+$headline-font: BebasNeue-Bold, sans-serif;
+$sub-headline-font: BebasNeue-Regular, sans-serif;
+
+// classes
+.text-white {
+    color: #fff;
+}
+.text-primary {
+    color: $primary-colour;
+}
+.text-brighter {
+    color: $brighter-colour;
+}
+.text-disabled {
+    color: $disabled-colour;
+}
+.text-brand-main {
+    color: $brand-main;
+}
+.text-danger {
+    color: $danger !important;
+}
+.text-warning {
+   color: $warning !important;
+}
+.text-success {
+    color: $success !important;
+}
+.text-info {
+    color: $info !important;
+}
+.text-background {
+    color: $background;
+}
+.text-primary-font {
+    font-family: $primary-font;
+}
+.text-header-font {
+    font-family: $headline-font;
+}
+.text-sub-headline-font {
+    font-family: $sub-headline-font;
+}
+.background-primary {
+    background: $primary-colour;
+}
+.background-card-dark {
+    background: $card-dark;
+}
+.background-info {
+    background: $info;
+}
+.background-warning {
+    background: $warning;
+}
+.background-success {
+    background: $success;
+}
+.background-danger {
+    background: $danger;
+}

@@ -1,0 +1,44 @@
+.button-with-confirmation {
+
+    .ant-btn {
+        &:not([disabled]):hover {
+            color: #ffffff !important;
+            background-color: rgba(251, 207, 129, 0.4) !important;
+            border-color: #f6a821 !important;
+        }
+    }
+
+    .cancel-button {
+        background-color: $background !important;
+    }
+
+    .ok-button {
+        background-color: rgba(246, 168, 33, 0.1) !important;
+    }
+
+    .ant-popover-inner {
+        background-color: $brand-main !important;
+        border-radius: 1em;
+        padding: 0.15em;
+        border-color: blue;
+    }
+
+    .ant-popover-inner-content {
+        border-radius: 1em;
+        background-color: $background !important;
+    }
+
+    .ant-popover-arrow {
+        border-right-color: $brand-main !important;
+        border-bottom-color: $brand-main !important;
+    }
+
+    .ant-popover-message {
+        color: $primary-colour;
+        font-size: 1.2em;
+        i svg {
+            height: 1.2em;
+            width: 1.2em;
+        }
+    }
+}

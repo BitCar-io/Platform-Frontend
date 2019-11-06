@@ -1,0 +1,122 @@
+.dashboard-thumbnail {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+.asset-ownership-container {
+
+    padding: 0px !important;
+    background: $background !important;
+
+    .ant-card-body {
+        padding: 0px !important;
+    }
+}
+
+.portfolio-row {
+    margin-bottom: 15px !important;
+    background: rgba(68, 70, 79, 0.5) !important;
+}
+
+.portfolio-card-info {
+    padding: 15px;
+}
+
+.portfolio-card-info .addtoken-wrapper {
+    font-size: 12px !important;
+    cursor: pointer;
+    float: none;
+    padding-top: 5px !important;
+  }
+
+.portfolio-card-header {
+    color: $brighter-colour;
+    text-align: left;
+    font-family: $sub-headline-font;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.portfolio-banner {
+    color: $background;
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    right: 10px;
+    padding-top: 2px;
+    text-align: center;
+    font-family: $headline-font;
+    font-size: 1.5em;
+    font-weight: bold;
+    .anticon {margin-right:3px}
+}
+
+.portfolio-actions {
+
+    margin-top: 20px;
+
+    .ant-badge {
+        margin-right: 10px;
+
+        .portfolio-icon-disabled {
+            margin-right: 0px;
+        }
+    }
+}
+
+.portfolio-icon {
+    font-size: 1.5em;
+    cursor: pointer;
+
+    margin-right: 10px;
+    color: $brand-main;
+
+    svg {
+        height: 1.15em;
+        width: 1.15em;
+        position: relative;
+        top: 0.1em;
+    }
+}
+
+.portfolio-icon-disabled {
+    @extend .portfolio-icon;
+
+    cursor: not-allowed;
+    color: $disabled-colour;
+}
+
+.portfolio-icon-badge {
+    margin-top: 5px;
+    font-size: 12px;
+    color: $danger;
+}
+
+.token-tooltip-display {
+    .ant-tooltip-content {
+        width: 275px;
+        background-color: $background;
+    }
+}
+
+.escrow-tooltip-display {
+    .ant-tooltip-content {
+        background-color: $background;
+    }
+}
+
+@media (max-width: 768px) {
+    .dashboard-thumbnail {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio-wallet-input {
+        padding: 20px;
+    }
+
+    .portfolio-wallet-input-info {
+        padding: 20px;
+    }
+}

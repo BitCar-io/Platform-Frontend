@@ -1,0 +1,69 @@
+.ant-btn {
+  color: $primary-colour !important;
+  background-color: transparent !important;
+  border-color: #f6a821 !important;
+  border-radius: 2px !important;
+
+  &:hover {
+    color: #ffffff !important;
+    background-color: rgba(246, 168, 33, 0.1) !important;
+    border-color: #f6a821 !important;
+  }
+  &.btn-secondary {
+    color: $primary-colour !important;
+    background-color: transparent !important;
+    border-color: #616779 !important;
+  }
+  &.ant-btn.btn-secondary:hover {
+    color: #ffffff !important;
+    background-color: #3d404c !important;
+    border-color: #616779 !important;
+  }
+  &.btn-danger {
+    color: $danger !important;
+    background-color: transparent !important;
+    border-color: $danger !important;
+  }
+  &.ant-btn.btn-danger:hover {
+    color: #ffffff !important;
+    background-color: rgba(219, 82, 75, 0.1) !important;
+    border-color: $danger !important;
+  }
+  &.btn-success {
+    color: $primary-colour !important;
+    background-color: transparent !important;
+    border-color: $success !important;
+  }
+  &.btn-success-solid {
+    color: $background !important;
+    background-color: $success !important;
+    border-color: $success !important;
+  }
+  &.ant-btn.btn-success:hover {
+    color: #ffffff !important;
+    background-color: rgba(27, 191, 137, 0.1) !important;
+    border-color: $success !important;
+  }
+  &.btn-info {
+    color: $primary-colour !important;
+    background-color: transparent !important;
+    border-color: $info !important;
+  }
+  &.ant-btn.btn-info:hover {
+    color: #ffffff !important;
+    background-color: rgba(86, 192, 224, 0.1) !important;
+    border-color: $info !important;
+  }
+  &.btn-center {
+    width: 50%;
+    margin: 0 25%;
+  }
+  &[disabled] {
+    background: #555 !important;
+    border-color: #666 !important;
+    color: #888 !important;
+  }
+  &[disabled]:hover {
+    color: #888 !important;
+  }
+}

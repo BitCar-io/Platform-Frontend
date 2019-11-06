@@ -1,0 +1,41 @@
+.error-container {
+    text-align: center;
+}
+
+.asset-not-found-container {
+    height: 400px;
+    text-align: center;
+}
+.error-code {
+    font-family: $headline-font;
+    font-size: 70px;
+}
+.stop-sign {
+    font-size: 80px;
+    color: $warning;
+}
+
+.error-details {
+    border-top: 1px solid;
+    padding-top: 10px;
+}
+
+.error-metamask-required {
+    margin-top: 1em;
+    background-color: $brand-main;
+
+    .ant-card-body {
+        h2, h3, a {
+            color: $background;
+        }
+
+        a {
+            text-decoration: underline;
+        }
+
+        #metamask-logo {
+            height: 100px;
+        }
+    }
+    
+}
